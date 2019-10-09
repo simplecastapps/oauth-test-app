@@ -7,6 +7,8 @@
 - Create a new private app (Account -> Private Apps) in your dashboard using the ngrok subdomain as the app domain
 - Set the `client_id` and `client_secret` obtained from the private app you created in the `.env` file
 - Set your ngrok subdomain as the redirect URI in the `.env` file
+- `npm install`
+- `nodemon index.js` (nodemon keeps the app running even if there's an error)
 
 
 ### Authorizing your app
