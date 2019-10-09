@@ -1,0 +1,12 @@
+<head><title>Auth  Page</title></head>
+<body>
+  <h1>Client ID: <%= client_id %></h1>
+  <form action="<%= auth_url %>/authorize" method="GET">
+    <input type="hidden" name="client_id" value="<%= client_id %>" />
+    <input type="hidden" name="scope" value="email" />
+    <input type="hidden" name="state" value="1234asdf" />
+    <input type="hidden" name="name" value="Muh Super-Great App" />
+    <input type="hidden" name="redirect_uri" value="<%= redirect_uri %>" />
+    <button type="submit">Authorize</submit>
+  </form>
+</body>
